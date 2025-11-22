@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram Mini App</title>
+
+  <!-- Required for Telegram Mini App -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+    .btn {
+      padding: 15px 20px;
+      background: #0088cc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Welcome to Your Telegram Mini App</h2>
+<p>This Mini App is live and ready to integrate Monetag ads.</p>
+
+<button class="btn" onclick="showAd()">Show Ad</button>
+
+<script>
+  // Telegram initialization
+  const tg = window.Telegram.WebApp;
+  tg.expand();
+
+  // Placeholder function for Monetag ad
+  function showAd() {
+    alert("Ad will appear here after Monetag code integration.");
+  }
+</script>
+
+</body>
+</html>
